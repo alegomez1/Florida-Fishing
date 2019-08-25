@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/mystyles.css" />
+  </head>
+  <body>
+    <!-- Navbar section -->
+    <nav
+      id="test1"
+      class="navbar navbar-expand-md bg-light navbar-light shadow fixed-top"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand " href="#"
+          ><img id="logo" src="images/Fish_icon.png" alt="" /></a
+        >
+        <ul class="navbar-nav ml-auto">
+          <li>
+            <!-- Dark Mode Button -->
+            <button
+              type="button"
+              class="btn btn-md btn-outline-dark"
+              onclick="test()"
+            >
+              Click Me!
+            </button>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Help</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Intro section -->
+    <header class="masthead">
+      <div class="container h-100">
+        <div class="row h-100 align-items-center">
+          <div class="col-12 text-center">
+            <h1 id="text" class="display-1">Florida Fishing</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Species List/Cards -->
+    <div
+      id="species-container"
+      class="container-fluid no-padding text-center center"
+    >
+      <h1 id="species-text" class="display-2">
+        Popular Species of South Florida
+      </h1>
+
+      <div id="species-row" class="row">
+        <div class="col-xs-1 col-sm-1 col-md-6 col-lg-3 col-xl-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="images/largemouth.jpg"
+              alt="largemouth"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Largemouth Bass</h5>
+              <p class="card-text">
+                The most common species of bass in Florida
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-1 col-sm-1 col-md-6 col-lg-3 col-xl-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="images/peacock.jpg"
+              alt="largemouth"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Peacock Bass</h5>
+              <p class="card-text">
+                The most common species of bass in Florida
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-1 col-sm-1 col-md-6 col-lg-3 col-xl-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="images/Snapper.jpg"
+              alt="largemouth"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Snapper</h5>
+              <p class="card-text">
+                The most common species of bass in Florida
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-1 col-sm-1 col-md-6 col-lg-3 col-xl-3">
+          <div class="card" style="width: 18rem;">
+            <img
+              class="card-img-top"
+              src="images/splashpic.jpg"
+              alt="largemouth"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Largemouth Bass</h5>
+              <p class="card-text">
+                The most common species of bass in Florida
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Where to find them container -->
+
+      <div id="find-them-container" class="container-fluid no-padding">
+        <h1 id="find-them-text" class="display-2">Where to Find Them</h1>
+
+        <div class="row">
+          <div class="col-4"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="javascript.js"></script>
+</html>
