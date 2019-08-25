@@ -4,6 +4,9 @@ function test() {
     //Navbar
     var navbar = document.querySelector('#test1')
     navbar.className = "navbar navbar-expand-md bg-dark navbar-dark shadow fixed-top"
+    //Dark Mode Button
+    var button = document.querySelector('#dark-mode-button')
+    button.className = "btn btn-md btn-outline-light"
     //Species Div
     var speciesDiv = document.querySelector('#species-container')
     var speciesHeader = document.querySelector("#species-text")
@@ -19,11 +22,30 @@ function test() {
     //Where To Find Them Div
     var findThemDiv = document.querySelector('#find-them-container')
     var findThemText = document.querySelector('#find-them-text')
+    var parkHeader = document.querySelector('#tropical-park-header')
+    var parkParagraph = document.querySelector('#tropical-park-paragraph')
     findThemDiv.style = "background-color: #212121"
     findThemText.style = "color: #939393"
+    parkHeader.style = "color: #939393"
+    parkParagraph.style = "color: #939393"
 
-
-
-
-
+}
+// Initialize and add the map
+function initMap() {
+    // The location of Tropical Park
+    var park = {
+        lat: 25.723354,
+        lng: -80.321624
+    };
+    // The map, centered at Tropical Park
+    var map = new google.maps.Map(
+        document.getElementById('map'), {
+            zoom: 13,
+            center: park
+        });
+    // The marker, positioned at park
+    var marker = new google.maps.Marker({
+        position: park,
+        map: map
+    });
 }
