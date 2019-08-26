@@ -57,6 +57,20 @@ function initMap() {
 }
 
 
+//Smooth Scrolling
+function smoothScroll(target, duration){
+    var target = document.querySelector(target)
+    var targetPostition = document.getBoundingClientRect();
+    var startingPosition = window.pageYOffset;
+    var distance = targetPostition - startingPosition;
+    var startTime = null;
+
+    function animation(currentTime){
+        if(startTime === null) startTime = currentTime;
+    }
+    
+    requestAnimationFrame(animation);
+}
 
 
 //Dark Sky API Testing
