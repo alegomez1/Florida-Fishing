@@ -50,7 +50,7 @@
   #find-them-container{
       margin: 100px 0 0 0;
       width: 100%;
-      height: 600px;
+      height: 700px;
       background-color: #E1ECF4;
 
     
@@ -71,6 +71,39 @@
   .map-row{
       margin: 50px 0 0 0;
   }
+#dark-sky-div{
+    width: 700px;
+    height: 120px;
+    background-color: #f2f2f2;
+    border: 4px solid white;
+    border-radius: 20px;
+    margin: 25px auto auto auto;
+
+}
+.fas{
+    font-size: 30px;
+    
+}
+i{
+    margin: 4px 0 0 0;
+}
+#dark-sky-div span{
+
+    display: inline-flex;
+}
+#dark-sky-div h3{
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
+}
+#dark-sky-div p{
+    padding: 0 15px;
+    font-size: 25px;
+    font-weight: 800;
+    color: #717272;
+ 
+}
 
   #footer-section{
       width: 100%;

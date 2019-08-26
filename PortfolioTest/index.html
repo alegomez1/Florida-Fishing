@@ -133,7 +133,7 @@
               <h5 class="card-title">Snapper</h5>
               <p class="card-text">
                   Snapper are extremely popular among recreational fishermen and a 
-                  prized offering at restaurants and seafood markets.
+                  prized offering at restaurants and seafood markets
               </p>
             </div>
           </div>
@@ -162,11 +162,26 @@
            <div class="col-xs-1 col-sm-1 col-md-8">
              <!-- Google Maps Div -->
               <div id="map"></div>
+              <!-- Dark Sky Weather API Test Div  -->
+
+<div id="dark-sky-div" class="container-fluid no-padding">
+    <h3 id="current-weather-text">Current weather</h3>
+    <span>
+      <i class="fas fa-temperature-low"></i><p id="temperature"> </p> 
+      <i class="fas fa-cloud"></i><p id="cloudCover"></p>
+      <i class="fas fa-wind"></i><p id="wind"></p>
+      
+    </span>
+  </div>
             </div>
 
         </div>
       </div>
     </div>
+
+
+
+
 
 <!-- Footer Section -->
 <footer>
@@ -188,5 +203,6 @@
   <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSM6gvLt0YVPtpeqWQm3JNNXQ332_uMXQ&callback=initMap">
     </script>
+    <script src="https://api.darksky.net/forecast/7eb1849b0c3162288646af7ce0df5581/37.8267,-122.4233"></script>
  
 </html>

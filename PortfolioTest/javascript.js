@@ -55,3 +55,28 @@ function initMap() {
         map: map
     });
 }
+
+
+
+//Dark Sky API Testing
+const proxy = 'https://cors-anywhere.herokuapp.com/'
+const api = `${proxy}https://api.darksky.net/forecast/7eb1849b0c3162288646af7ce0df5581/25.723354,-80.321624`
+
+console.log(api)
+
+fetch(api)
+    .then(response => {
+        return response.json();
+
+    }).then(data => {
+        console.log(data)
+
+        var temp = document.querySelector('#temperature')
+        temp.innerText += " " + data.currently.temperature
+
+        var wind = document.querySelector('#wind')
+        wind.innerText += " " + data.currently.windSpeed + " mph"
+
+        var cloudCover = document.querySelector('#cloudCover')
+        cloudCover.innerText += " " + data.currently.cloudCover
+    })
