@@ -70,12 +70,11 @@ fetch(api)
 
     }).then(data => {
         console.log(data)
-
         var temp = document.querySelector('#temperature')
         temp.innerText += " " + data.currently.temperature
 
         var wind = document.querySelector('#wind')
-        wind.innerText += " " + data.currently.windSpeed + " mph"
+        wind.innerText += " " + data.currently.windSpeed + " mph" 
 
         var cloudCover = document.querySelector('#cloudCover')
         cloudCover.innerText += " " + data.currently.cloudCover
