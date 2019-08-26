@@ -75,9 +75,10 @@
   #footer-section{
       width: 100%;
       height: 110px;
-      background-color: #5b5a5a;
-      border-top: 1px solid black;
+      background-color: white;
+
       margin: 0 0 0 0;
+      
   }
 
 i{
@@ -86,4 +87,13 @@ i{
 .follow-us-text{
     font-size: 20px;
     padding: 25px 0 0 0
+}
+
+.card-body{
+    height: 200px;
+    
+}
+.card-img-top{
+    width: 286px !important;
+    height: 180px !important
 }

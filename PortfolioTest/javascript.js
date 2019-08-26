@@ -28,6 +28,12 @@ function test() {
     findThemText.style = "color: #939393"
     parkHeader.style = "color: #939393"
     parkParagraph.style = "color: #939393"
+    //Footer Div
+    var footerDiv = document.querySelector('#footer-section')
+    var footerText = document.querySelector('#footer-text')
+    footerDiv.style = "border-top: 2px solid white"
+    footerDiv.style = "background-color: #383838"
+    footerText.style = "color: #939393"
 
 }
 // Initialize and add the map
