@@ -95,7 +95,11 @@ fetch(api)
         cloudCover.innerText += " " + data.currently.cloudCover
     })
 
+//Flipping Function Code
 
+function flipFunction(){
+    console.log("Flip Click Worked")
+}
      
 
 
