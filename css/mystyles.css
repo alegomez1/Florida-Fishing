@@ -148,5 +148,6 @@ i {
 .card:hover{
     box-shadow: -1px 9px 40px -12px black;
     transform: translateY(-10px);
+    transition: all .2s ease;
    
 }

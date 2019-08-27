@@ -43,15 +43,31 @@ function initMap() {
         lat: 25.723354,
         lng: -80.321624
     };
+    var lake = {
+        lat: 25.719614,
+        lng: -80.369308
+    };
+    var lake2 = {
+        lat: 25.775193,
+        lng: -80.306342
+    };
     // The map, centered at Tropical Park
     var map = new google.maps.Map(
         document.getElementById('map'), {
-            zoom: 13,
-            center: park
+            zoom: 11,
+            center: lake2
         });
     // The marker, positioned at park
     var marker = new google.maps.Marker({
         position: park,
+        map: map
+    });
+    var marker2 = new google.maps.Marker({
+        position: lake,
+        map: map
+    });
+    var marker3 = new google.maps.Marker({
+        position: lake2,
         map: map
     });
 }
@@ -97,9 +113,6 @@ fetch(api)
 
 //Flipping Function Code
 
-function flipFunction(){
-    console.log("Flip Click Worked")
-}
      
 
 

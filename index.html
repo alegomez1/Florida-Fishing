@@ -14,21 +14,20 @@
     <!-- Navbar section -->
     <nav
       id="test1"
-      class="navbar navbar-expand-md bg-light navbar-light shadow fixed-top"
-    >
+      class="navbar navbar-expand-md bg-light navbar-light shadow fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand " href="#"
-          ><img id="logo" src="images/Fish_icon.png" alt="" /></a
-        >
+        <a class="navbar-brand " href="#"><img id="logo" src="images/Fish_icon.png" alt=""/></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-
-
-        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ml-auto">
           <li>
             <!-- Dark Mode Button -->
             <button
-              type="button" id="dark-mode-button"
+              type="button"
+              id="dark-mode-button"
               class="btn btn-md btn-outline-dark"
               onclick="test()"
             >
@@ -49,7 +48,7 @@
             <a class="nav-link" href="#footer-section">Follow Us</a>
           </li>
         </ul>
-      </div>
+      </div> </div>
     </nav>
 
     <!-- Intro section -->
@@ -59,12 +58,10 @@
           <div class="col-12 text-center">
             <h1 id="text" class="display-1">Florida Fishing</h1>
           </div>
-             <!-- invisible anchor paragraph -->
-     <p id="species-anchor"> </p>
+          <!-- invisible anchor paragraph -->
+          <p id="species-anchor"></p>
         </div>
-      
       </div>
-    
     </header>
 
     <!-- Species List/Cards -->
@@ -87,7 +84,8 @@
             <div class="card-body">
               <h5 class="card-title">Largemouth Bass</h5>
               <p class="card-text">
-                  The largemouth bass is a carnivorous freshwater gamefish native to the eastern and central United States.
+                The largemouth bass is a carnivorous freshwater gamefish native
+                to the eastern and central United States.
               </p>
             </div>
           </div>
@@ -103,8 +101,8 @@
             <div class="card-body">
               <h5 class="card-title">Peacock Bass</h5>
               <p class="card-text">
-                  Peacock bass have evolved in the most efficient predators of the
-                   group and the mostly on other fish. 
+                Peacock bass have evolved in the most efficient predators of the
+                group and the mostly on other fish.
               </p>
             </div>
           </div>
@@ -120,7 +118,8 @@
             <div class="card-body">
               <h5 class="card-title">Alligator Gar</h5>
               <p class="card-text">
-                  Alligator gar are voracious ambush predators that are primarily piscivorous. 
+                Alligator gar are voracious ambush predators that are primarily
+                piscivorous.
               </p>
             </div>
           </div>
@@ -136,8 +135,8 @@
             <div class="card-body">
               <h5 class="card-title">Snapper</h5>
               <p class="card-text">
-                  Snapper are extremely popular among recreational fishermen and a 
-                  prized offering at restaurants and seafood markets
+                Snapper are extremely popular among recreational fishermen and a
+                prized offering at restaurants and seafood markets
               </p>
             </div>
           </div>
@@ -146,63 +145,72 @@
 
       <!-- Where to find them container -->
 
-       <!-- invisible anchor paragraph -->
-       <p id="location-anchor"> </p>
+      <!-- invisible anchor paragraph -->
+      <p id="location-anchor"></p>
 
       <div id="find-them-container" class="container-fluid no-padding">
         <h1 id="find-them-text" class="display-2">Where to Find Them</h1>
 
-        <div class ="row no-padding map-row">
+        <div class="row no-padding map-row">
           <!-- Header+Paragraph Col -->
           <div class="col-xs-1 col-sm-1 col-md-4">
             <h3 id="tropical-park-header" class="display-4">Tropical Park</h3>
-            <p id="tropical-park-paragraph" class="lead">Tropical Park offers three large lakes which provide plenty of opportunity for fishing.
-              You'll find a plethora of species at the park such as largemouth bass, peacock bass, tilapia, bluegills, 
-              catfish, and many more. You can't go wrong with bringing live bait such as shiners or nightcrawlers, 
-              but those up to the challenge have also had great success with artifical lures.
+            <p id="tropical-park-paragraph" class="lead">
+              Tropical Park offers three large lakes which provide plenty of
+              opportunity for fishing. You'll find a plethora of species at the
+              park such as largemouth bass, peacock bass, tilapia, bluegills,
+              catfish, and many more. You can't go wrong with bringing live bait
+              such as shiners or nightcrawlers, but those up to the challenge
+              have also had great success with artifical lures.
             </p>
           </div>
-           <!-- Map Col -->
-           <div class="col-xs-1 col-sm-1 col-md-8">
-             <!-- Google Maps Div -->
-              <div id="map"></div>
-              <!-- Dark Sky Weather API Test Div  -->
+          <!-- Map Col -->
+          <div class="col-xs-1 col-sm-1 col-md-8">
+            <!-- Google Maps Div -->
+            <div id="map"></div>
+            <!-- Dark Sky Weather API Test Div  -->
 
-<div id="dark-sky-div" class="container-fluid no-padding">
-    <h3 id="current-weather-text">Current weather</h3>
-    <span>
-      <i class="fas fa-temperature-low"></i><p id="temperature"> </p> 
-      <i class="fas fa-cloud"></i><p id="cloudCover"></p>
-      <i class="fas fa-wind"></i><p id="wind"></p>
-    </span>
-  </div>
+            <div id="dark-sky-div" class="container-fluid no-padding">
+              <h3 id="current-weather-text">Current weather</h3>
+              <span>
+                <i class="fas fa-temperature-low"></i>
+                <p id="temperature"></p>
+                <i class="fas fa-cloud"></i>
+                <p id="cloudCover"></p>
+                <i class="fas fa-wind"></i>
+                <p id="wind"></p>
+              </span>
             </div>
-
+          </div>
         </div>
       </div>
     </div>
 
-
-<!-- Footer Section -->
-<footer>
-<div id="footer-section" class="container-fluid no-padding text-center">
-
-    <p id="footer-text" class="follow-us-text display-4">Follow Us</p>
- <p class="footer-icons">
-      <i class="fab fa-facebook-square fa-lg"></i>
-      <i class="fab fa-twitter-square fa-lg"></i>
-      <i class="fab fa-youtube fa-lg"></i>
-</p>
-
-</div>
-</footer>
-
+    <!-- Footer Section -->
+    <footer>
+      <div id="footer-section" class="container-fluid no-padding text-center">
+        <p id="footer-text" class="follow-us-text display-4">Follow Us</p>
+        <p class="footer-icons">
+          <i class="fab fa-facebook-square fa-lg"></i>
+          <i class="fab fa-twitter-square fa-lg"></i>
+          <i class="fab fa-youtube fa-lg"></i>
+        </p>
+      </div>
+    </footer>
   </body>
 
   <script src="javascript.js"></script>
-  <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSM6gvLt0YVPtpeqWQm3JNNXQ332_uMXQ&callback=initMap">
-    </script>
-    <script src="https://api.darksky.net/forecast/7eb1849b0c3162288646af7ce0df5581/37.8267,-122.4233"></script>
- 
+  <script
+    async
+    defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCSM6gvLt0YVPtpeqWQm3JNNXQ332_uMXQ&callback=initMap"
+  ></script>
+  
+  <script src="https://api.darksky.net/forecast/7eb1849b0c3162288646af7ce0df5581/37.8267,-122.4233"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
 </html>
